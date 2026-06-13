@@ -1,0 +1,10 @@
+path: MCMOT_TFG/models/datasets/yolo_11/augmented
+
+test: images/test
+train: images/train
+val: images/validation
+
+class_number: 1
+
+names:
+  0: golf_cart

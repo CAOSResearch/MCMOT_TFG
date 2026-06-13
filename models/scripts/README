@@ -1,0 +1,21 @@
+# How to use the Multi Camera Multi Object Tracking System:
+
+The Framework is composed of various scripts.
+1- train.py 
+    If you want to train a new model you can execute this script. Remember to respect the YOLO dataset expectations of train, test, validation folders with the images and labels inside.
+
+2- multicamera.yaml 
+    When implementing this script on a different dataset or application, where there are more classes, this script should be modified to represent that.
+
+3- pipeline.py
+    If you are working with recorded streams, remember to save them in a folder inside MCMOT_TFG/models/dataset/videos/
+    When launching the system do:
+        python pipeline.py
+    From a folder parent to MCMOT_TFG.
+
+    The videos writen in the scripts "SOURCES" will be used as the input of the pipeline. The output of the pipeline will end in MCMOT_TFG/models/output/"folder_name"
+
+    The YOLO model used is chosen from those trained or downloaded and stored in MCMOT_TFG/models/scripts/runs/detect/...
+
+The rest of the scripts can be altered to modify parameters according to the needs of the user but otherwise should not be touched.
+

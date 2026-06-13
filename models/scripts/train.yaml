@@ -1,0 +1,11 @@
+
+path: MCMOT_TFG/models/datasets/yolo_11/augmented/
+
+test: images/test
+train: images/train
+val: images/validation
+
+nc: 1
+
+names:
+  0: carrito
